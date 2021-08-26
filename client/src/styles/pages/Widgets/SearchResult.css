@@ -1,0 +1,20 @@
+.searchresult {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+.searchresult:nth-child(1) {
+  border-radius: 10px 10px 0 0;
+}
+
+.searchresult:hover {
+  background-color: var(--extra-light-gray);
+}
+
+.searchresult__names {
+  display: flex;
+  flex-direction: column;
+}

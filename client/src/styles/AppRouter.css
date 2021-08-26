@@ -1,0 +1,12 @@
+.appRouter__IconContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appRouter__Icon {
+  height: 100px !important;
+  width: 100px !important;
+}

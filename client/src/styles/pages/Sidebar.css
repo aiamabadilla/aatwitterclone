@@ -1,0 +1,76 @@
+.sidebar {
+  flex: 0.2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sidebar__newOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.sidebar__newModal {
+  background-color: var(--light);
+  max-width: 648px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.sidebar__Button {
+  margin: 10px 0 !important;
+  height: 40px !important;
+  border-radius: 50px !important;
+  min-width: 0 !important;
+  transition: all 100ms ease-out;
+}
+
+.sidebar__twitterIcon {
+  height: 30px !important;
+  width: 30px !important;
+  color: var(--primary) !important;
+}
+
+.sidebar__Icon {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.sidebar__Button:hover {
+  background-color: var(--extra-light-primary) !important;
+}
+
+.sidebar__tweetboxButton,
+.sidebar__login,
+.sidebar__signup,
+.sidebar__logout {
+  margin: 5px 0px !important;
+  background-color: var(--primary) !important;
+  color: var(--light) !important;
+  text-transform: none !important;
+  font-weight: 900 !important;
+  width: 85% !important;
+  padding: 10px 20px !important;
+  border-radius: 50px !important;
+  transition: all 100ms ease-out !important;
+}
+
+.sidebar__tweetboxButton:hover,
+.sidebar__login:hover,
+.sidebar__signup:hover,
+.sidebar__logout:hover {
+  background-color: var(--dark-primary) !important;
+}
+.sidebar__userButtons,
+.sidebar__links {
+  width: 100%;
+}

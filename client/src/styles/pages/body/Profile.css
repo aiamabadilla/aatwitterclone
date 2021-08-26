@@ -1,0 +1,366 @@
+.profileWrapper {
+  flex: 0.5;
+  /* border: 1px solid var(--light-gray); */
+  border-top: none;
+  border-bottom: none;
+  width: 648px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  width: 100%;
+}
+
+.loading__CircularProgress {
+  margin-top: 100px;
+  color: var(--primary) !important;
+}
+
+.profile__banner {
+  height: 200px;
+  background-color: var(--primary);
+}
+
+.profile__description {
+  position: relative;
+  margin: 20px;
+}
+
+.profile__Avatar {
+  position: absolute !important;
+  height: 132px !important;
+  width: 132px !important;
+  top: -86px !important;
+  border: 3px solid var(--light);
+}
+.profile__EditButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile__EditButton {
+  border: 1px solid var(--primary) !important;
+  border-radius: 30px !important;
+  color: var(--primary) !important;
+  text-transform: inherit !important;
+  font-weight: 900 !important;
+  padding: 10px 15px !important;
+}
+
+.profile__info {
+  margin-top: 10px;
+}
+
+.profile__editOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+}
+
+.profile__editModal {
+  background-color: var(--light);
+  max-width: 600px;
+  max-height: 800px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.profile__editHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.profile__editHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.profile__editCloseButton {
+  min-width: 0 !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50px !important;
+  margin-right: 10px !important;
+  transition: all 100ms ease-out !important;
+}
+
+.profile__editCloseButton:hover {
+  background-color: var(--light-primary) !important;
+}
+
+.profile__editTitle {
+  font-size: 20px;
+}
+
+.profile__editSave {
+  background-color: var(--primary) !important;
+  border-radius: 50px !important;
+  padding: 7px 30px !important;
+  color: var(--light) !important;
+  text-transform: inherit !important;
+  transition: all 100ms ease-out !important;
+}
+
+.profile__editSave:hover {
+  background-color: var(--dark-primary) !important;
+}
+
+.profile__editBannerContent {
+  max-width: 600px;
+  width: 100%;
+  max-height: 185.19px;
+  height: 185.19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--primary);
+}
+
+.profile__editBannerModal {
+  background-color: var(--light);
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.profile__editBannerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
+}
+
+.profile__editBannerCropper,
+.profile__editAvatarCropper {
+  height: 600px;
+  width: 600px;
+}
+
+.profile__editBannerButton {
+  min-width: 0 !important;
+  border-radius: 50px !important;
+  height: 40px !important;
+  width: 40px !important;
+  transition: all 100ms ease-out !important;
+}
+
+.profile__editBannerButton:hover {
+  background-color: var(--extra-extra-light-gray-opague) !important;
+}
+
+.profile__editIcon {
+  color: var(--extra-light-gray) !important;
+}
+
+.profile__editContent {
+  margin: 20px;
+}
+
+.profile__editAvatarModal {
+  background-color: var(--light);
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.profile__editAvatarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
+}
+
+.profile__editAvatarContent {
+  position: relative;
+}
+
+.profile__editAvatar {
+  position: absolute !important;
+  height: 127px !important;
+  width: 127px !important;
+  top: -83.5px !important;
+  border: 3px solid var(--light);
+}
+
+.profile__editAvatarButton {
+  position: absolute !important;
+  top: -35px !important;
+  left: 46px !important;
+  min-width: 0 !important;
+  border-radius: 50px !important;
+  height: 40px !important;
+  width: 40px !important;
+  transition: all 100ms ease-out !important;
+}
+
+.profile__editAvatarButton:hover {
+  background-color: var(--extra-extra-light-gray-opague) !important;
+}
+
+.profile__editTextContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.profile__editTextContent > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+}
+
+.profile__editNameLabel,
+.profile__editBioLabel,
+.profile__editDateLabel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__editDateLabel {
+  margin-top: 10px;
+}
+
+.profile__editNameLabelText,
+.profile__editBioLabelText,
+.profile__editDateLabelText {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile__editNameLabelAmount,
+.profile__editBioLabelAmount,
+.profile__editDateLabelAmount {
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.profile__editNameInput,
+.profile__editBioInput,
+.profile__editDateInput,
+.profile__editDateWrapper {
+  width: 96% !important;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
+}
+
+.profile__editDateInput {
+  padding-left: 0;
+}
+
+.profile__editBioInput {
+  padding-bottom: 25px;
+}
+
+.profile__editDateWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.profile__viewDate {
+  display: flex;
+  align-items: center;
+}
+.profile__editDate {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.profile__editDateButton,
+.profile__saveDateButton,
+.profile__cancelDateButton {
+  width: 100px !important;
+  margin-left: 10px !important;
+  background-color: var(--primary) !important;
+  border-radius: 50px !important;
+  color: var(--light) !important;
+  text-transform: inherit !important;
+}
+.profile__saveDateButton {
+  margin-left: 0 !important;
+}
+
+.profile__editDateButton:hover {
+  background-color: var(--dark-primary) !important;
+}
+
+.profile__name {
+  color: var(--dark-gray);
+  font-weight: 300;
+}
+
+.profile__bio {
+  margin: 10px 0px;
+  font-weight: 300;
+}
+
+.profile__dates {
+  display: flex;
+}
+
+.profile__birthday,
+.profile__createdon {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 5px;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--dark-gray);
+}
+
+.profile__follow {
+  display: flex;
+}
+
+.profile__follow > h5 {
+  margin: 15px 0px;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--dark-gray);
+}
+
+.profile__follow > h5 > span {
+  font-weight: 700;
+  color: var(--dark);
+}

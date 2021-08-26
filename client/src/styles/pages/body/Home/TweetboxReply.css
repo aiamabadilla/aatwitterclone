@@ -1,0 +1,130 @@
+.tweetboxreply {
+  width: 100%;
+  position: relative;
+}
+
+.tweetboxreply__uploadProgress {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: var(--primary) !important;
+}
+
+.tweetboxreply__form {
+  display: flex;
+  margin: 10px 15px;
+}
+
+.form__header {
+}
+
+.form__avatar {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.form__body {
+  width: 100%;
+  margin: 15px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form__preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--light-gray);
+  margin-bottom: 10px;
+}
+
+.form__textInput {
+  resize: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  overflow: none;
+  padding-bottom: 10px;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 500;
+}
+
+.form__imagePreview {
+  width: 100%;
+  max-width: 550px;
+  max-height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.form__imagePreviewCloseButton {
+  min-width: 0 !important;
+  border-radius: 50px !important;
+  width: 25px !important;
+  height: 25px !important;
+  position: absolute !important;
+  top: 43px !important;
+  right: 10px !important;
+  background-color: var(--extra-light-primary) !important;
+}
+.form__imagePreviewCloseIcon {
+  color: var(--primary) !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__actions {
+}
+
+.form__button {
+  min-width: 0 !important;
+  border-radius: 50px !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.form__button:hover {
+  background-color: var(--extra-light-primary) !important;
+}
+
+.form__icon {
+  height: 20px !important;
+  width: 20px !important;
+  color: var(--primary);
+}
+
+.form__limitSubmit {
+  display: flex;
+  align-items: center;
+}
+
+.form__limitSubmit > .Mui-disabled {
+  background-color: var(--light-primary) !important;
+}
+
+.form__textLimit {
+  width: 20px !important;
+  height: 20px !important;
+  color: var(--light-primary) !important;
+}
+
+.form__submit {
+  background-color: var(--primary) !important;
+  text-transform: inherit !important;
+  color: var(--light) !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  padding: 5px 15px !important;
+  border-radius: 50px !important;
+  margin-left: 20px !important;
+}

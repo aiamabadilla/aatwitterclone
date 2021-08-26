@@ -1,0 +1,29 @@
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.page__content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.page__body {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid var(--light-gray);
+  border-top: none;
+  border-bottom: none;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  min-width: fit-content;
+}
+
+.page__body::-webkit-scrollbar {
+  display: none;
+}
